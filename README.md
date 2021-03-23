@@ -1,16 +1,16 @@
-##Mikä IoT?
+## Mikä IoT?
 
-##Sääasemajärjestelmän toimintakaavio
-´´´´
+## Sääasemajärjestelmän toimintakaavio
+´´´
 - Laitteistot
 - Komponentit
 - Palvelut
 - Ohjelmointi
 - Toiminta
-´´´´
+´´´
 
-##Käytetyt kehitysympäristöt
+## Käytetyt kehitysympäristöt
 
-##Termihakemisto
+## Termihakemisto
 
-##Viitteet
+## Viitteet
