@@ -1,58 +1,90 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Chart from "react-google-charts";
 
 function App() {
+
+const initWeather = [];
+
+const [weather, setWeather] = useState (initWeather);
+
+function convertUTCDateToLocalDate(date) {
+new Date(date.getTime() + date.getTimezoneOffset()*60*1000);
+  return date;
+}
+
+let chartHumData = [
+  ['Aika', '%'],
+  ['Loading...', 0]
+];
+
+let chartTempData = [
+      ['Aika', 'Asteet'],
+      ['Loading...', 0]
+];
+
+fetch('https://oppilas-6.azurewebsites.net/api/HttpTriggerCSharp2?code=cCXYqyAdHAV3rza9bGJhiPfMiV2YhEpXmQVLapFTSzCZGoVAJTzLRg==&deviceId=390035001947393035313138&amount=10')
+ .then(response => response.json())
+ .then (json => setWeather([...json]));
+
+let humtempkey = 1;
+const rows = () => weather.map(temphum => {
+
+  if(chartHumData[1][0] === 'Loading...'){
+    chartHumData.pop();
+  }
+
+   if(chartTempData[1][0] === 'Loading...'){
+    chartTempData.pop();
+  }
+
+
+chartHumData.push([String(convertUTCDateToLocalDate(new Date(temphum.Timestamp))).split(' ')[4], parseInt(temphum.Hum)])
+
+chartTempData.push([String(convertUTCDateToLocalDate(new Date(temphum.Timestamp))).split(' ')[4], parseInt(temphum.Hum)])
+
+return <div key={humtempkey++}>
+ <b>Kello:</b> {String(convertUTCDateToLocalDate(new Date(temphum.Timestamp))).split(' ')[4]} &nbsp;
+ <b>Ilmankosteus:</b> {temphum.Hum} % &nbsp;
+ <b>Lämpötila:</b> {temphum.Temp} °C
+</div>
+ 
+})
+
   return (
     <div className="App">
-     <div style={{ display: 'flex', maxWidth: 1900 }}>
+    {rows()}
+     <div>
   <Chart
-    width={1400}
+    width={1000}
     height={300}
     chartType="ColumnChart"
     loader={<div>Loading Chart</div>}
-    data={[
-      ['City', '%'],
-      ['15.00', 27],
-      ['16.00', 27],
-      ['17.00', 26],
-      ['18.00', 26],
-      ['19.00', 26],
-    ]}
+    data={chartHumData}
     options={{
       title: 'Ilmankosteus',
-      chartArea: { width: '30%' },
       hAxis: {
-        title: 'Total Population',
+
         minValue: 0,
       },
       vAxis: {
         title: '',
       },
     }}
-    legendToggle
   />
   </div>
-   <div style={{ display: 'flex', maxWidth: 1900 }}>
+   <div>
   <Chart
-    width={1400}
-    height={'300px'}
-    chartType="AreaChart"
+    width={1000}
+    height={300}
+    chartType="LineChart"
     loader={<div>Loading Chart</div>}
-    data={[
-      ['Year', 'C', ''],
-      ['15.00', 1000, 400],
-      ['16.00', 1170, 460],
-      ['17.00', 660, 1120],
-      ['18.00', 1030, 540],
-      ['19.00', 1030, 540],
-    ]}
+    data={chartTempData}
     options={{
       title: 'Lämpötila',
-      hAxis: { title: 'Year', titleTextStyle: { color: '#333' } },
+      hAxis: { titleTextStyle: { color: '#333' } },
       vAxis: { minValue: 0 },
       // For the legend to fit, we make the chart area smaller
-      chartArea: { width: '50%', height: '70%' },
       // lineWidth: 25
     }}
   />
