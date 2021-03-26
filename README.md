@@ -22,10 +22,6 @@ Esimerkki: IoT:n avulla saadan vedet poikki vesivahingon sattuessa.
 ##### Kuva sääaseman rakenteesta:
 ![Kuva3](PlanA.png)
 
-##### Laitteistot
-
-##### Komponentit
-
 ##### Palvelut
 ```
 - Sääasema käyttää Microsoft Azure pilvipalveluja.
@@ -33,9 +29,12 @@ Esimerkki: IoT:n avulla saadan vedet poikki vesivahingon sattuessa.
 - Huonot puolet: Yksityisyys, tietoturva
 ```
 
-## Käytetyt kehitysympäristöt
-
 ## Termihakemisto
+```
+- Https on lyhenne sanoista hypertext transfer protocol secure. Https on salattu versio http:stä, joka on protokolla, jonka ehdoilla kaikki verkkosivut toimivat.
+- AES (engl. Advanced Encryption Standard) on lohkosalausmenetelmä, jota käytetään tietotekniikassa.
+- Webhook on tapa, jolla sovellus voi tarjota muille sovelluksille tietoja reaaliaikaisesti.
+```
 
 ## Viitteet
 https://www.empirica.fi/iot-ratkaisut/?utm_medium=ppc&utm_term=asioiden%20internet&utm_campaign=Website+traffic-Search-3&utm_source=adwords&hsa_kw=asioiden%20internet&hsa_cam=10894399158&hsa_ver=3&hsa_acc=8977936464&hsa_ad=459271225845&hsa_grp=106664272545&hsa_src=g&hsa_mt=b&hsa_tgt=kwd-306162688519&hsa_net=adwords&gclid=Cj0KCQjwo-aCBhC-ARIsAAkNQiv4XUPbZeV9wZ-xTmaentm-74G6Scob3dCsU9cdlM19MSuZg-Hxwx4aAg6TEALw_wcB
