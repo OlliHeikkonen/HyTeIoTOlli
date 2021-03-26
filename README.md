@@ -1,4 +1,4 @@
-#Iot
+#  Iot
 
 ## Mikä IoT?
 IoT eli internet of things.
@@ -8,13 +8,29 @@ Monelle yritykselle esineiden internet on keskeinen osa digitalisaatiostrategiaa
 Esineiden internet mahdollistaa töiden muuttamisen paikasta riippumattomaksi. Laitteita voidaan ohjata etänä ja dataa kerätä kohteista ilman käyntiä paikan päällä.
 Laitteilla kerätään dataa fyysisestä ympäristöstä eli digitalisoidaan fyysinen ympäristö. Reaaliaikaisella datalla saat arvokasta tietoa liiketoiminnastasi.
 
+Esimerkki: IoT:n avulla saadan vedet poikki vesivahingon sattuessa.
+
 ## Sääasemajärjestelmän toimintakaavio
+##### IoT-järjestelmän rakenne:
 ```
-- Laitteistot
-- Komponentit
-- Palvelut
-- Ohjelmointi
-- Toiminta
+- Anturi kerää dataa.
+- Tietoliikenteen avulla antureiden dta viedään pilveen.
+- Tietovarastoon tallennetaan data.
+- Analytiikan avulla tallennettua dataa  hyödynnetään.
+```
+
+##### Kuva sääaseman rakenteesta:
+![Kuva3](PlanA.png)
+
+##### Laitteistot
+
+##### Komponentit
+
+##### Palvelut
+```
+- Sääasema käyttää Microsoft Azure pilvipalveluja.
+- Hyödyt: Edullisempaa
+- Huonot puolet: Yksityisyys, tietoturva
 ```
 
 ## Käytetyt kehitysympäristöt

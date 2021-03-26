@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import './App.css';
 import Chart from "react-google-charts";
+import Header from './components/layout/Header';
+import Footer from './components/layout/Footer';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Portfolio from './components/Portfolio';
+
 
 function App() {
 
@@ -51,45 +56,52 @@ return <div key={humtempkey++}>
  
 })
 
-  return (
+return (
+  <Router>
     <div className="App">
+  <Header />
+      <Footer />
+      <Switch>
+      <Route path="/portfolio">
+      <Portfolio />
+      </Route>
+      <Route path="/">
     {rows()}
      <div>
   <Chart
-    width={1000}
+    width={'100%'}
     height={300}
     chartType="ColumnChart"
     loader={<div>Loading Chart</div>}
     data={chartHumData}
     options={{
       title: 'Ilmankosteus',
-      hAxis: {
-
-        minValue: 0,
-      },
-      vAxis: {
-        title: '',
-      },
+      chartArea: { width: '50%'  },
+      vAxis: { minValue: 0 },
     }}
   />
   </div>
    <div>
   <Chart
-    width={1000}
+    width={'100%'}
     height={300}
     chartType="LineChart"
     loader={<div>Loading Chart</div>}
     data={chartTempData}
     options={{
       title: 'Lämpötila',
-      hAxis: { titleTextStyle: { color: '#333' } },
+      chartArea: { width: '50%' },
+    //  hAxis: { titleTextStyle: { color: '#333' } },
       vAxis: { minValue: 0 },
       // For the legend to fit, we make the chart area smaller
       // lineWidth: 25
     }}
   />
 </div>
+</Route>
+</Switch>
     </div>
+</Router>
   );
 }
 
