@@ -29,6 +29,16 @@ Esimerkki: IoT:n avulla saadan vedet poikki vesivahingon sattuessa.
 - Huonot puolet: Yksityisyys, tietoturva
 ```
 
+### Anturit:
+```
+- Kuuloanturista tulee A-painotettu desibeli arvo eli se yrittää ottaa huomioon miten ihmiskorva kuulee äänet. Sitä voi hyödyntää turvallisuudessa, liikenteessä sekä tutkinta työssä esimerkiksi. Kuuloanturi pystyy tunnistamaan esimerkiksi missä ammuttiin aseella, onko vanhus nukkumassa tai laulaako linnut.
+
+- Tuntoanturi mittaa esimerkiksi kosteutta, painoa tai asentoa. Sitä voi hyödyntää esimerkiksi rakennustyömaalla, lääketieteessä tai rahti alalla. Sillä voi esimerkiksi nähdä onko potilas nielaissut pillerin, onko rakennuksessa vahinkoa tai paljonko joku laatikko painaa.
+
+- Hajuanturi tunnistaa erilaisia yhdisteitä kaasuista. Hajuanturin avulla voi tunnistaa esimerkiksi homeongelman tai sairauden.
+
+- Näköanturi kerää valoa ja värejä ympöristöstä. Sen avulla voidaan esimerkiksi valvoa tuotantoa, turvallisuutta ja ottaa valokuvia.
+```
 ## Termihakemisto
 ```
 - Https on lyhenne sanoista hypertext transfer protocol secure. Https on salattu versio http:stä, joka on protokolla, jonka ehdoilla kaikki verkkosivut toimivat.
@@ -38,3 +48,5 @@ Esimerkki: IoT:n avulla saadan vedet poikki vesivahingon sattuessa.
 
 ## Viitteet
 https://www.empirica.fi/iot-ratkaisut/?utm_medium=ppc&utm_term=asioiden%20internet&utm_campaign=Website+traffic-Search-3&utm_source=adwords&hsa_kw=asioiden%20internet&hsa_cam=10894399158&hsa_ver=3&hsa_acc=8977936464&hsa_ad=459271225845&hsa_grp=106664272545&hsa_src=g&hsa_mt=b&hsa_tgt=kwd-306162688519&hsa_net=adwords&gclid=Cj0KCQjwo-aCBhC-ARIsAAkNQiv4XUPbZeV9wZ-xTmaentm-74G6Scob3dCsU9cdlM19MSuZg-Hxwx4aAg6TEALw_wcB
+
+https://www.dna.fi/yrityksille/aistien-internet-podcast
