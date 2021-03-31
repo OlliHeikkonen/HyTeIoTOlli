@@ -20,7 +20,7 @@ Esimerkki: IoT:n avulla saadan vedet poikki vesivahingon sattuessa.
 ```
 
 ##### Kuva sääaseman rakenteesta:
-![Kuva3](PlanA.png)
+![Kuva1](PlanA.png)
 
 ##### Palvelut
 ```
@@ -38,7 +38,18 @@ Esimerkki: IoT:n avulla saadan vedet poikki vesivahingon sattuessa.
 - Hajuanturi tunnistaa erilaisia yhdisteitä kaasuista. Hajuanturin avulla voi tunnistaa esimerkiksi homeongelman tai sairauden.
 
 - Näköanturi kerää valoa ja värejä ympöristöstä. Sen avulla voidaan esimerkiksi valvoa tuotantoa, turvallisuutta ja ottaa valokuvia.
+
+- DHT11 anturi mittaa kosteutta ja lämpötilaa. Siinä on neljä pinniä (VCC, Data, NC, GND). Kosteuden mittaus perustuu resistiiviseen elementtiin. Lämpötilan mittaus perustuu NTC vastukseen.
 ```
+### Ohjelmointi
+![Kuva2](C.png)
+![Kuva3](B.png)
+Particle Consolilla me ohjattiin Photonia.
+![Kuva4](CSharp1.png)
+![Kuva5](CSharp22.png)
+![Kuva6](CSharp23.png)
+Portal Azuressa teimme 2 triggeriä jotka ottavat vastaan ja lähettävät eteenpäin pilvessä.
+
 ## Termihakemisto
 ```
 - Https on lyhenne sanoista hypertext transfer protocol secure. Https on salattu versio http:stä, joka on protokolla, jonka ehdoilla kaikki verkkosivut toimivat.
@@ -50,3 +61,5 @@ Esimerkki: IoT:n avulla saadan vedet poikki vesivahingon sattuessa.
 https://www.empirica.fi/iot-ratkaisut/?utm_medium=ppc&utm_term=asioiden%20internet&utm_campaign=Website+traffic-Search-3&utm_source=adwords&hsa_kw=asioiden%20internet&hsa_cam=10894399158&hsa_ver=3&hsa_acc=8977936464&hsa_ad=459271225845&hsa_grp=106664272545&hsa_src=g&hsa_mt=b&hsa_tgt=kwd-306162688519&hsa_net=adwords&gclid=Cj0KCQjwo-aCBhC-ARIsAAkNQiv4XUPbZeV9wZ-xTmaentm-74G6Scob3dCsU9cdlM19MSuZg-Hxwx4aAg6TEALw_wcB
 
 https://www.dna.fi/yrityksille/aistien-internet-podcast
+
+https://ihmevekotin.fi/laempoetila-anturit/242-dht11-digitaalinen-laempoetila-ja-ilmankosteusanturi-johdolla.html
