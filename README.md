@@ -49,7 +49,8 @@ Particle Consolilla me ohjattiin Photonia.
 ![Kuva5](CSharp22.png)
 ![Kuva6](CSharp23.png)
 Portal Azuressa teimme 2 triggeriä jotka ottavat vastaan ja lähettävät eteenpäin pilvessä.
-
+![Kuva7](Github1.png)
+Käytimme Githubia versionhallintaan
 ## Termihakemisto
 ```
 - Https on lyhenne sanoista hypertext transfer protocol secure. Https on salattu versio http:stä, joka on protokolla, jonka ehdoilla kaikki verkkosivut toimivat.
