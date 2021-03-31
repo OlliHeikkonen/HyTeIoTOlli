@@ -98,7 +98,7 @@ return (
     }}
   />
   <a href="https://github.com/OlliHeikkonen/HyTeIoTOlli/blob/master/README.md"
-  target="_BLANK" rel="noopener noreffer">Projektin README</a>
+  target="_BLANK" rel="noopener noreferrer">Projektin README</a>
 </div>
 </Route>
 </Switch>
