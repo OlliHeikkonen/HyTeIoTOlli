@@ -65,4 +65,4 @@ https://www.empirica.fi/iot-ratkaisut/?utm_medium=ppc&utm_term=asioiden%20intern
 
 https://www.dna.fi/yrityksille/aistien-internet-podcast
 
-https://ihmevekotin.fi/laempoetila-anturit/242-dht11-digitaalinen-laempoetila-ja-ilmankosteusanturi-johdolla.html
+https://ihmevekotin.fi/laempoetila-anturit/242-dht11-digitaalinen-laempoetila-ja-ilmankosteusanturi-johdolla.html  
