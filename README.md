@@ -48,16 +48,18 @@ Particle Consolilla me ohjattiin Photonia.
 ![Kuva4](CSharp1.png)
 ![Kuva5](CSharp22.png)
 ![Kuva6](CSharp23.png)
-Portal Azuressa teimme 2 triggeriä jotka ottavat vastaan ja lähettävät eteenpäin pilvessä.
+Portal Azuressa teimme 2 triggeriä joista ensimmäinen ottaa vastaan ja tallentaa dataa tietovarastoon ja käyttöliittymä kutsuu toista triggeriä, joka hakee teitovarastosta dataa käyttöliittymän käyttöön.
 ![Kuva7](Github1.png)
-Käytimme Githubia versionhallintaan
+Käytimme Githubia versionhallintaan.
+
+### Käyttöliittymä siirretään versionhallinnasta Azuren pilvipalveluun static webappiin
+
 ## Termihakemisto
 ```
 - Https on lyhenne sanoista hypertext transfer protocol secure. Https on salattu versio http:stä, joka on protokolla, jonka ehdoilla kaikki verkkosivut toimivat.
 - AES (engl. Advanced Encryption Standard) on lohkosalausmenetelmä, jota käytetään tietotekniikassa.
 - Webhook on tapa, jolla sovellus voi tarjota muille sovelluksille tietoja reaaliaikaisesti.
 ```
-moi
 ## Viitteet
 https://www.empirica.fi/iot-ratkaisut/?utm_medium=ppc&utm_term=asioiden%20internet&utm_campaign=Website+traffic-Search-3&utm_source=adwords&hsa_kw=asioiden%20internet&hsa_cam=10894399158&hsa_ver=3&hsa_acc=8977936464&hsa_ad=459271225845&hsa_grp=106664272545&hsa_src=g&hsa_mt=b&hsa_tgt=kwd-306162688519&hsa_net=adwords&gclid=Cj0KCQjwo-aCBhC-ARIsAAkNQiv4XUPbZeV9wZ-xTmaentm-74G6Scob3dCsU9cdlM19MSuZg-Hxwx4aAg6TEALw_wcB
 
